@@ -1,0 +1,42 @@
+{
+  "name": "my-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --modern",
+    "#build": "(这是注释)启用现代模式，即会进行两次打包，一次针对旧浏览器进行打包，一次针对现代浏览器进行打包；但该模式下会和BundleAnalyzerPlugin打包分析插件冲突，打包的时候会报错，但可以不用管，打包分析结果是第一次的",
+    "test:Pager": "vue serve ./src/components/Pager/test.vue",
+    "test:Avatar": "vue serve ./src/components/Avatar/test.vue",
+    "test:Icon": "vue serve ./src/components/Icon/test.vue",
+    "test:Empty": "vue serve ./src/components/Empty/test.vue",
+    "test:ImageLoader": "vue serve ./src/components/ImageLoader/test.vue",
+    "test:Contact": "vue serve ./src/components/SiteAside/Contact/test.vue",
+    "test:Contact2": "vue serve ./src/components/Contact2/test.vue",
+    "test:Menu": "vue serve ./src/components/SiteAside/Menu/test.vue",
+    "test:SiteAside": "vue serve ./src/components/SiteAside/test.vue",
+    "test:Layout": "vue serve ./src/components/Layout/test.vue",
+    "test:Loading": "vue serve ./src/components/Loading/test.vue",
+    "test:RightList": "vue serve ./src/views/Blog/components/RightList-test.vue"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "highlight.js": "^10.5.0",
+    "mockjs": "^1.1.0",
+    "node": "^12.22.12",
+    "nprogress": "^0.2.0",
+    "querystring": "^0.2.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.2",
+    "@vue/cli-service": "^4.5.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.4.0"
+  }
+}
